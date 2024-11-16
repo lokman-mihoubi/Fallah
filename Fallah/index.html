@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fallah</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .header {
+    height: 70px; /* Fixed height for navbar */
+    overflow: hidden; /* Prevents elements from breaking layout */
+}
+
+#logo-img {
+    max-height: 100px; /* Keeps logo within navbar height */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Prevent distortion */
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+@media (max-width: 768px) {
+    .header {
+        height: 60px; /* Adjust navbar height for mobile */
+    }
+    #logo-img {
+        max-height: 60px; /* Scale logo for mobile */
+    }
+}
+.post-img {
+  height: 250px; /* Set the fixed height */
+  overflow: hidden; /* Ensures that any image part outside the container is hidden */
+}
+
+.post-img img {
+  width: 100%; /* Ensures that the image stretches to the full width of the parent container */
+  height: 100%; /* Ensures that the image takes up the full height of the parent container */
+  object-fit: cover; /* Ensures the image is properly contained in the container without distortion */
+}
+
+/* Default direction (LTR) for larger screens */
+.navmenu {
+  direction: ltr; /* Left to Right */
+}
+
+/* RTL direction for screens smaller than 768px */
+@media (max-width: 768px) {
+  .navmenu {
+    direction: rtl; /* Right to Left */
+  }
+}
+
+
+
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logofallah.jpg" alt="Fallah" id="logo-img">
+
+        <!-- <h1 class="sitename">AgriCulture</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="#footer" >اتصل بنا</a></li>
+            <li><a href="register.html" >تسجيل الدخول</a></li>
+            <li><a href="orders.html" > الطلبات</a></li>
+            <li><a href="#expert-meetings"> الخبراء</a></li>
+            <li><a href="#sell-products">بع منتجاتك لنا</a></li>
+            <li><a href="#recent-posts">منتجاتنا</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+    
+
+    </div>
+  </header>
+
+  <main class="main">
+
+   <!-- قسم البطل -->
+<section id="hero" class="hero section dark-background">
+
+  <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-item active">
+      <img src="assets/img/hero_2.jpg" alt="">
+      <div class="carousel-container">
+        <h2>مرحباً بكم في موقع فلاح</h2>
+
+      </div>
+    </div><!-- نهاية العنصر الدوار -->
+
+   
+
+   
+
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+    <ol class="carousel-indicators"></ol>
+
+  </div>
+
+</section><!-- /قسم البطل -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" dir="rtl">
+        <h2>خدماتنا</h2>
+      </div><!-- End Section Title -->
+      
+      <div class="content" dir="rtl">
+        <div class="container">
+          <div class="row g-0">
+            
+            <div class="col-lg-3 col-md-6">
+              <div class="service-item">
+                <span class="number">01</span>
+                <div class="service-item-icon">
+                  <!-- SVG icon here -->
+                </div>
+                <div class="service-item-content">
+                  <h3 class="service-heading">العقود مع مصنعي الأغذية والمصدرين</h3>
+                  <p>تبدأ عمليتنا بتوقيع العقود مع مصنعي المواد الغذائية لتوفير احتياجاتهم الإنتاجية من المحاصيل البستانية عالية الجودة والتي تنطبق على المواصفات المطلوبة وتوريدها في الجدول الزمني المتفق عليه.</p>
+                </div>
+              </div>
+            </div>
+            
+      
+            <div class="col-lg-3 col-md-6">
+              <div class="service-item">
+                <span class="number">02</span>
+                <div class="service-item-icon">
+                  <!-- SVG icon here -->
+                </div>
+                <div class="service-item-content">
+                  <h3 class="service-heading">العقود مع صغار المزارعين</h3>
+                  <p>ولضمان وصول المزارعين إلى الأسواق، نقوم بالتعاقد مع المزارعين، وخاصة أصحاب الحيازات الصغيرة، لزراعة المحاصيل المطلوبة. يتضمن العقد التسجيل في منصة فلاح لعرض العقود والبيانات المالية وجداول التسليم. ومن أجل بيئة مثالية غير نقدية، يحصل جميع المزارعين المتعاقدين على بطاقة دفع إلكترونية لاستلام أموالهم رقميًا.</p>
+                </div>
+              </div>
+            </div>
+            
+      
+            <div class="col-lg-3 col-md-6">
+              <div class="service-item">
+                <span class="number">03</span>
+                <div class="service-item-icon">
+                  <!-- SVG icon here -->
+                </div>
+                <div class="service-item-content">
+                  <h3 class="service-heading">توفير المدخلات اللازمة للزراعة</h3>
+                  <p>أحد التحديات الرئيسية التي تواجه المزارعين هو الحصول على التمويل ولذلك تقوم فلاح بتزويد المزارعين بإمدادات زراعية آمنة من البذور والشتلات والأسمدة والمبيدات الحشرية من خلال شبكة أصحاب المصلحة الموثوقين لدينا.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+              <div class="service-item">
+                <span class="number">04</span>
+                <div class="service-item-icon">
+                  <!-- SVG icon here -->
+                </div>
+                <div class="service-item-content">
+                  <h3 class="service-heading">دعم الهندسة الزراعية</h3>
+                  <p>الدعم الفني مهم جدًا في هذه المرحلة. نحن نعمل على تنفيذ ممارسات زراعية أفضل لتحسين الإنتاجية وإدارة استخدام المدخلات لكل هكتار بشكل أفضل لحماية البيئة والحد من التلوث. المهندسون الزراعيون في فلاح متواجدون دائمًا في الميدان ويقدمون عن بعد تجربة سلسة لتلقي وجميع استشارات الهندسة الزراعية من خلال وحدة رعاية الفلاحين في فلاح.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="service-item">
+                <span class="number">05</span>
+                <div class="service-item-icon">
+                  <!-- SVG icon here -->
+                </div>
+                <div class="service-item-content">
+                  <h3 class="service-heading">مراكز ما بعد الحصاد</h3>
+                  <p>عند الحصاد تعمل فلاح بأعلى معايير الجودة لتجهيز المنتج حسب المواصفات المطلوبة ليكون جاهزًا للتصنيع ويتم تسليمه للمصنع أو الشركة بكفاءة.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="service-item">
+                <span class="number">06</span>
+                <div class="service-item-icon">
+                  <!-- SVG icon here -->
+                </div>
+                <div class="service-item-content">
+                  <h3 class="service-heading">الدفع الرقمي عند التسليم</h3>
+                  <p>يتم تحويل الدفع عند استلام المنتج ويمكن للفلاح الاطلاع على تفاصيل المعاملات من خلال المنصة ويمكن للفلاحين صرف أموالهم بسهولة عبر بطاقة الدفع الإلكترونية من أقرب ماكينة صراف آلي لديهم.</p>
+                </div>
+              </div>
+            </div>
+                                    
+      
+          </div>
+        </div>
+      </div>
+      
+    </section><!-- /Services Section -->
+
+
+    <section id="expert-meetings" class="expert-meetings section" dir="rtl">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>طلب اجتماع مع الخبير</h2>
+        <p>حدد موعدًا مع خبيرنا لزيادة معرفتك في مختلف المجالات</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row gy-5">
+    
+          <!-- Expert Meeting Item 1 -->
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/farmer1.jpg" class="img-fluid" alt="الخبراء 1">
+                <span class="post-date">20 نوفمبر</span>
+              </div>
+    
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">ايمن</h3>
+    
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="pe-2">خبير متخصص</span>
+                  </div>
+                </div>
+    
+                <hr>
+    
+                <!-- Modal Trigger Button -->
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expertMeetingModal" 
+                        data-expert-name="الزراعة الحديثة" data-expert-field="الزراعة">
+                  طلب اجتماع مع الخبير
+                </button>
+              </div>
+            </div>
+          </div><!-- End Expert Item -->
+    
+          <!-- Expert Meeting Item 1 -->
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/farmer2.jpg" class="img-fluid" alt="الخبراء 1">
+                <span class="post-date">20 نوفمبر</span>
+              </div>
+    
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">ايمن</h3>
+    
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="pe-2">خبير متخصص</span>
+                  </div>
+                </div>
+    
+                <hr>
+    
+                <!-- Modal Trigger Button -->
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expertMeetingModal" 
+                        data-expert-name="الزراعة الحديثة" data-expert-field="الزراعة">
+                  طلب اجتماع مع الخبير
+                </button>
+              </div>
+            </div>
+          </div><!-- End Expert Item -->
+    
+          <!-- Expert Meeting Item 1 -->
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/farmer1.jpg" class="img-fluid" alt="الخبراء 1">
+                <span class="post-date">20 نوفمبر</span>
+              </div>
+    
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">ايمن</h3>
+    
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="pe-2">خبير متخصص</span>
+                  </div>
+                </div>
+    
+                <hr>
+    
+                <!-- Modal Trigger Button -->
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expertMeetingModal" 
+                        data-expert-name="الزراعة الحديثة" data-expert-field="الزراعة">
+                  طلب اجتماع مع الخبير
+                </button>
+              </div>
+            </div>
+          </div><!-- End Expert Item -->
+    
+        </div>
+      </div>
+    
+      <!-- Modal for Scheduling a Meeting -->
+      <div class="modal fade" id="expertMeetingModal" tabindex="-1" aria-labelledby="expertMeetingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="expertMeetingModalLabel">جدولة اجتماع مع الخبير</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="expertModal">
+              <form id="expertMeetingForm" onsubmit="return validateForm()">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">الاسم الكامل</label>
+                  <input type="text" class="form-control" id="fullName" required>
+                  <div class="invalid-feedback" id="fullNameError">الرجاء إدخال الاسم الكامل.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback" id="emailError">الرجاء إدخال بريد إلكتروني صالح.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="meetingDate" class="form-label">تاريخ الاجتماع</label>
+                  <input type="date" class="form-control" id="meetingDate" required>
+                  <div class="invalid-feedback" id="meetingDateError">الرجاء تحديد تاريخ الاجتماع.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">رسالة أو ملاحظات</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إرسال الطلب</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section><!-- End Expert Meetings Section -->
+    
+    <!-- Swiper JS Initialization Script -->
+    <script>
+      // Form Validation Script
+      function validateForm() {
+        let isValid = true;
+    
+        // Validate Full Name
+        const fullName = document.getElementById('fullName');
+        if (!fullName.value.trim()) {
+          document.getElementById('fullNameError').style.display = 'block';
+          isValid = false;
+        } else {
+          document.getElementById('fullNameError').style.display = 'none';
+        }
+    
+        // Validate Email
+        const email = document.getElementById('email');
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!email.value.trim() || !emailPattern.test(email.value)) {
+          document.getElementById('emailError').style.display = 'block';
+          isValid = false;
+        } else {
+          document.getElementById('emailError').style.display = 'none';
+        }
+    
+        // Validate Meeting Date
+        const meetingDate = document.getElementById('meetingDate');
+        if (!meetingDate.value.trim()) {
+          document.getElementById('meetingDateError').style.display = 'block';
+          isValid = false;
+        } else {
+          document.getElementById('meetingDateError').style.display = 'none';
+        }
+    
+        return isValid; // Return whether the form is valid or not
+      }
+    </script>
+    
+
+    <section id="recent-posts" class="recent-posts section" dir="rtl">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>منتجاتنا</h2>
+        <p>اختر منتجاتك المفضلة من الفواكه والخضروات واطلبها بسهولة</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row gy-5">
+    
+          <!-- Product Item 1 -->
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+              <div class="post-img position-relative overflow-hidden" >
+                <img src="assets/img/tomate.jpg" class="img-fluid"  alt="منتج 1">
+                <span class="post-date">12 ديسمبر</span>
+              </div>
+    
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">طماطم طازجة</h3>
+    
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="pe-2">منتج محلي</span>
+                  </div>
+                </div>
+    
+                <hr>
+    
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" data-product-name="طماطم طازجة" data-product-price="10">شراء الآن</button>
+              </div>
+            </div>
+          </div><!-- End post item -->
+    
+          <!-- Product Item 2 -->
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/potato.jpg" class="img-fluid" alt="منتج 2">
+                <span class="post-date">17 يوليو</span>
+              </div>
+    
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">خضروات متنوعة</h3>
+    
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="pe-2">منتج محلي</span>
+                  </div>
+                </div>
+    
+                <hr>
+    
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" data-product-name="خضروات متنوعة" data-product-price="15">شراء الآن</button>
+              </div>
+            </div>
+          </div><!-- End post item -->
+          <!-- Product Item 2 -->
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
+              <div class="post-img position-relative overflow-hidden" style="max-height:300px">
+                <img src="assets/img/carotte.jpg" class="img-fluid" style="max-height:300px;" alt="منتج 2">
+                <span class="post-date">17 يوليو</span>
+              </div>
+    
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">خضروات متنوعة</h3>
+    
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="pe-2">منتج محلي</span>
+                  </div>
+                </div>
+    
+                <hr>
+    
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" data-product-name="خضروات متنوعة" data-product-price="15">شراء الآن</button>
+              </div>
+            </div>
+          </div><!-- End post item -->
+    
+        </div>
+      </div>
+    
+    </section><!-- End Recent Posts Section -->
+    
+    <!-- Modal for purchasing products -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalLabel">طلب المنتج</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="purchaseForm">
+              <div class="mb-3">
+                <label for="productName" class="form-label">المنتج</label>
+                <input type="text" class="form-control" id="productName" readonly>
+              </div>
+              <div class="mb-3">
+                <label for="productQuantity" class="form-label">الكمية</label>
+                <input type="number" class="form-control" id="productQuantity" placeholder="أدخل الكمية">
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">العنوان</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="أدخل عنوانك"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="أدخل رقم هاتفك" pattern="[0-9]{10}" required>
+                <small class="form-text text-muted">أدخل رقم هاتفك بشكل صحيح (مثال: 0123456789).</small>
+              </div>
+            </form>
+            <div id="confirmationMessage" class="alert alert-success" style="display:none;">
+              <p>تم إرسال الطلب بنجاح! سنتواصل معك قريبًا.</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+            <button type="button" class="btn btn-primary" id="submitOrder">إرسال الطلب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="sell-products" class="sell-products section" dir="rtl">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>بع منتجاتك لنا</h2>
+        <p>قم بإدخال تفاصيل المنتجات التي تريد بيعها وسنقوم بالتواصل معك</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form id="sellForm" class="needs-validation" novalidate data-aos="fade-up" data-aos-delay="100">
+              <div class="mb-3">
+                <label for="productName" class="form-label">اسم المنتج</label>
+                <input type="text" class="form-control" id="productName" placeholder="مثال: تفاح" required>
+                <div class="invalid-feedback">يرجى إدخال اسم المنتج.</div>
+              </div>
+    
+              <div class="mb-3">
+                <label for="productQuantity" class="form-label">الكمية (بالكيلوغرام)</label>
+                <input type="number" class="form-control" id="productQuantity" placeholder="أدخل الكمية بالكيلوغرام" min="1" required>
+                <div class="invalid-feedback">يرجى إدخال كمية صحيحة (1 كغ على الأقل).</div>
+              </div>
+    
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">السعر المطلوب لكل كغ</label>
+                <input type="number" class="form-control" id="productPrice" placeholder="أدخل السعر بالدينار" min="1" required>
+                <div class="invalid-feedback">يرجى إدخال سعر صالح (دينار واحد على الأقل).</div>
+              </div>
+    
+              <div class="mb-3">
+                <label for="sellerName" class="form-label">اسمك</label>
+                <input type="text" class="form-control" id="sellerName" placeholder="أدخل اسمك الكامل" required>
+                <div class="invalid-feedback">يرجى إدخال اسمك الكامل.</div>
+              </div>
+    
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="أدخل رقم هاتفك" pattern="^[0-9]{10}$" required>
+                <div class="invalid-feedback">يرجى إدخال رقم هاتف صالح مكون من 10 أرقام.</div>
+              </div>
+    
+              <div class="mb-3">
+                <label for="sellerAddress" class="form-label">العنوان</label>
+                <textarea class="form-control" id="sellerAddress" rows="2" placeholder="أدخل عنوانك الكامل" required></textarea>
+                <div class="invalid-feedback">يرجى إدخال عنوانك الكامل.</div>
+              </div>
+    
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">إرسال</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CSS for styling -->
+    <style>
+      .sell-products {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+      }
+    
+      .sell-products .form-control.is-invalid {
+        border-color: #dc3545;
+      }
+    
+      .sell-products .invalid-feedback {
+        color: #dc3545;
+        font-size: 0.875em;
+      }
+    
+      .sell-products .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+    
+      .sell-products .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+      }
+    </style>
+    
+    
+    <!-- JavaScript to handle the modal form -->
+    <script>
+      const productModal = document.getElementById('productModal');
+      const productNameInput = document.getElementById('productName');
+      const productQuantityInput = document.getElementById('productQuantity');
+      const addressInput = document.getElementById('address');
+      const phoneNumberInput = document.getElementById('phoneNumber');
+      const submitOrderButton = document.getElementById('submitOrder');
+      const confirmationMessage = document.getElementById('confirmationMessage');
+    
+      productModal.addEventListener('show.bs.modal', (event) => {
+        // Get product details from the clicked button
+        const button = event.relatedTarget;
+        const productName = button.getAttribute('data-product-name');
+        const productPrice = button.getAttribute('data-product-price');
+    
+        // Update modal with product details
+        productNameInput.value = productName;
+      });
+    
+      submitOrderButton.addEventListener('click', () => {
+        // Collect form data and handle the order
+        const productName = productNameInput.value;
+        const quantity = productQuantityInput.value;
+        const address = addressInput.value;
+        const phoneNumber = phoneNumberInput.value;
+    
+        if (!quantity || !address || !phoneNumber) {
+
+          
+          // If any field is empty, display an error message
+          confirmationMessage.classList.remove('alert-success');
+          confirmationMessage.classList.add('alert-danger');
+          confirmationMessage.innerHTML = '<p>يرجى إدخال الكمية والعنوان ورقم الهاتف.</p>';
+          confirmationMessage.style.display = 'block';
+          return;
+        }
+        // Prepare order data
+      const orderData = {
+        productName: productName,
+        quantity: quantity,
+        address: address,
+        phoneNumber: phoneNumber
+      };
+      let demandData = JSON.parse(localStorage.getItem('demandData')) || [];
+      demandData.push(orderData);
+      localStorage.setItem('demandData', JSON.stringify(demandData));
+  
+        // Process the order (this could involve sending the data to a server)
+        confirmationMessage.classList.remove('alert-danger');
+        confirmationMessage.classList.add('alert-success');
+        confirmationMessage.innerHTML = `<p>تم إرسال الطلب بنجاح! المنتج: ${productName}, الكمية: ${quantity}, العنوان: ${address}, رقم الهاتف: ${phoneNumber}</p>`;
+        confirmationMessage.style.display = 'block';
+    
+        // Close the modal after submission
+        const modal = bootstrap.Modal.getInstance(productModal);
+        modal.hide();
+      });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+
+    
+
+  </main>
+
+  <footer id="footer" class="footer dark-background" dir="rtl">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">فلاح</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p> الجزائر العاصمة  </p>
+                        <p class="mt-3"><strong>الهاتف:</strong> <span>+213 589 55488 55</span></p>
+                        <p><strong>البريد الإلكتروني:</strong> <span>info@example.com</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>روابط مفيدة</h4>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">شروط الخدمة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="#">التواصل معنا</a></li>
+                        <li><a href="#">الهاتف</a></li>
+                        <li><a href="#">البريد الإلكتروني</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>اتصل بنا</h4>
+                    <ul>
+                        <li><a href="#">الهاتف: +213  55488 213</a></li>
+                        <li><a href="#">البريد الإلكتروني: info@example.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

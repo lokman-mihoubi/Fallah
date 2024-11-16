@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2 class="text-center mb-4">تسجيل الدخول</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" id="email" class="form-control" placeholder="ادخل البريد الإلكتروني" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input type="password" id="password" class="form-control" placeholder="ادخل كلمة المرور" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+                <p class="text-center mt-3">ليس لديك حساب؟ <a href="register.html">إنشاء حساب</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const defaultUser = { email: "test@example.com", password: "123456" };
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const savedUser = JSON.parse(localStorage.getItem('user'));
+
+            if ((email === defaultUser.email && password === defaultUser.password) || 
+                (savedUser && email === savedUser.email && password === savedUser.password)) {
+                alert("تم تسجيل الدخول بنجاح!");
+                window.location.href = "index1.html";
+            } else {
+                alert("البريد الإلكتروني أو كلمة المرور غير صحيحة.");
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
